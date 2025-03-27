@@ -3,9 +3,6 @@ import requests
 import os
 from dotenv import load_dotenv
 
-from keep_alive import keep_alive
-keep_alive()
-
 
 # Load API keys from .env
 load_dotenv()
