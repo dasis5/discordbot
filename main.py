@@ -6,8 +6,8 @@ from dotenv import load_dotenv
 
 # Load API keys from .env
 load_dotenv()
-DISCORD_BOT_TOKEN = os.getenv("DISCORD_TOKEN")
-OPENROUTER_API_KEY = os.getenv("AI_API")
+DISCORD_BOT_TOKEN = os.environ.get("DISCORD_TOKEN")
+OPENROUTER_API_KEY = os.environ.get("AI_API")
 
 API_URL = "https://openrouter.ai/api/v1/chat/completions"
 
